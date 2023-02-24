@@ -1,0 +1,52 @@
+.main
+    background-color: $bg
+    &__wrapper
+        overflow: hidden
+        position: relative
+        display: flex
+    &__ellipse-wrapper
+        position: absolute
+        left: 33%
+        display: flex
+        justify-content: center
+    &__ellipse
+        height: 94.4rem
+        width: 94.4rem
+        background: linear-gradient(180deg, rgba(234, 227, 212, 0) 0%, #EAE3D4 100%)
+        border-radius: 50%
+        position: relative
+        &::after
+            content: ''
+            height: 94.4rem
+            width: 94.4rem
+            background-color: $bg
+            display: block
+            position: absolute
+            left: 50%
+    &__showcase
+        z-index: 1
+
+.showcase
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    &__offer
+        align-self: center
+        margin-left: 185px
+    &__view-block
+        display: flex
+        position: relative
+    &__label-wrapper
+        position: absolute
+        font-family: Prata
+        font-size: 1.6rem
+        font-weight: 400
+        &_1
+            top: 19rem
+            left: -10rem
+        &_2
+            bottom: 12.4rem
+            left: 52rem
+    &__watch-img
+        height: 85.5rem
+        object-position: 0 3rem

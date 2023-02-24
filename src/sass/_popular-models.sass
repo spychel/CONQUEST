@@ -1,0 +1,83 @@
+.popular-models
+    background-color: $bg-popular-models
+    &__wrapper
+        padding: 2.5rem 9.8rem 8.6rem 9.8rem
+        display: flex
+        flex-direction: column
+    &__title
+        text-align: center
+        font-size: 3.2rem
+        font-family: Playfair Display
+        font-weight: 400
+        line-height: 43px
+    &__link
+        transition: .2s all
+        &:link, &:visited
+            text-align: end
+            font-family: Roboto
+            font-weight: 500
+            font-size: 1.6rem
+            text-decoration: none
+            color: #444240
+        &:hover
+            filter: brightness(.5)
+        & span
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                height: 1px
+                background-color: #C4C0B6
+                width: 100%
+                bottom: -.8rem
+                left: 0
+    &__cards
+        display: grid
+        grid-template-columns: repeat(3, 37rem)
+        gap: 3rem
+
+.card
+    width: 37rem
+    height: 47rem
+    background-color: #FDFDFB
+    display: flex
+    padding: 4rem 3rem
+    flex-direction: column
+    font-family: Playfair Display
+    color: rgba(#1B1A17, .82)
+    &__description-block
+        display: flex
+        flex-direction: column
+    &__manufacturer
+        font-size: 1.4rem
+        font-weight: 700
+        line-height: 2.4rem
+        letter-spacing: .042rem
+    &__price
+        font-family: Prata
+        font-size: 1.2rem
+        font-weight: 400
+        line-height: 1.6rem
+    &__img-wrapper
+        background: linear-gradient(#FDFDFB, #FDFDFB) padding-box, linear-gradient(270deg, #E2D0C4 0.3%, rgba(226, 208, 196, 0) 99.67%) border-box
+        border: 1px solid transparent
+        border-radius: 50%
+        width: 30rem
+        height: 30rem
+    &__img
+        object-position: 0px
+        max-width: 100%
+        max-height: 100%
+    &__more-block
+        display: block
+        height: 2.5rem
+        transition: .3s all
+        &:link, &:visited
+            text-decoration: none
+        &:hover
+            transform: translateY(-.2rem)
+    &__more
+        font-size: 1.6rem
+        font-weight: 400
+        line-height: 2.1rem
+        color: #1B1A17

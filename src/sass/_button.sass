@@ -1,0 +1,43 @@
+.button
+    &, &:link, &:visited
+        display: block
+        transition: all .3s
+        position: relative
+        border: none
+        text-decoration: none
+        text-align: center
+        text-transform: uppercase
+        color: #FFFFFF
+        font-family: Roboto
+        font-weight: 500
+        font-size: 1.2rem
+        letter-spacing: .06rem
+    &:hover
+        transform: translateY(-0.4rem)
+        &::after
+            opacity: 0
+            transform: scaleX(1.5) scaleY(1.7)
+    &:active
+        transform: translateY(-0.2rem)
+    &::after
+        content: ""
+        width: 100%
+        height: 100%
+        border-radius: 5rem
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+        transition: all .4s
+    &_animated
+        animation: BtnToUp .5s ease-out .7s
+        animation-fill-mode: backwards
+    &_type-1
+        width: 20.5rem
+        height: 6.5rem
+        padding: 2.6rem 3.8rem
+    &_dark
+        background-color: #444240
+    &_brown
+        background-color: #D4B098

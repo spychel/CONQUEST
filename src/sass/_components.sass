@@ -1,0 +1,46 @@
+.line
+    position: relative
+    &::after
+        content: ''
+        height: 0.1rem
+        background-color: $line-color
+        top: 50%
+        position: absolute
+
+.line-50
+    &::after
+        width: 5rem
+    &_left
+        &::after
+            left: -6.5rem
+    &_right
+        &::after
+            right: -6.5rem
+
+.line-30
+    &::after
+        width: 3rem
+    &_left
+        &::after
+            left: -4.5rem
+    &_right
+        &::after
+            right: -4.5rem
+
+.offer
+    display: flex
+    flex-direction: column
+    &__title_h1
+        color: #1B1A17
+        font-size: 4.5rem
+        font-family: Playfair Display
+        font-weight: 400
+    &__title_h2
+        font-size: 3.2rem
+        font-family: Playfair Display
+        font-weight: 400
+    &__description
+        color: #444240
+        font-size: 1.6rem
+        font-family: Roboto
+        font-weight: 300

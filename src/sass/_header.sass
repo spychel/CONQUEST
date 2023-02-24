@@ -1,0 +1,91 @@
+.header
+    background-color: $bg
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-content: center
+        height: $header-height
+
+.logo
+    display: flex
+    &__sign
+        width: 2rem
+        height: 2rem
+        margin-right: .5rem
+        &_dark
+            background: url("../icons/logo_dark.svg") center / cover no-repeat
+        &_light
+            background: url("../icons/logo_light.svg") center / cover no-repeat
+    &__label
+        font-family: Playfair Display
+        font-weight: 400
+        font-size: $logo-font-size
+        letter-spacing: .224rem
+        &_dark
+            color: #555248
+        &_light
+            color: #FFFFFF
+        &_align-bottom
+            align-self: flex-end
+        &_align-center
+            align-self: center
+
+.navbar
+    &__list
+        width: 50rem
+        list-style: none
+        display: flex
+        justify-content: space-between
+        gap: 6.5rem
+    &__item
+        font-size: $navbar-font-size
+        line-height: $navbar-font-lh
+        transition: 0.2s all
+        &:hover, &:active
+            transform: translateY(-.2rem)
+    &__link
+        &:link, &:visited
+            font-family: Roboto
+            font-weight: 400
+            color: $navbar-font-color
+            cursor: pointer
+            text-decoration: none
+
+.func-block
+    display: flex
+    justify-content: space-between
+    gap: 2.3rem
+    &__item
+        cursor: pointer
+        height: 1.6rem
+        width: 1.9rem
+        display: inline-block
+        transition: 0.3s transform
+        &:hover, &:active
+            transform: translateY(-.2rem)
+    &__cart
+        background: url("../icons/cart.svg") center / cover no-repeat
+        width: 1.8rem
+    &__search
+        background: url("../icons/search.svg") center / cover no-repeat
+        width: 1.6rem
+    &__favorite
+        position: relative
+        background: url("../icons/favorite.svg") center / cover no-repeat
+        &::after
+            content: '1'
+            position: absolute
+            font-size: 0.8rem
+            color: #1B1A17
+            top: -32%
+            left: 92%
+        &::before
+            content: ''
+            position: absolute
+            background-color: $func-block-fav-notification-color
+            width: 1.3rem
+            height: 1.3rem
+            border-radius: 50%
+            top: -42%
+            left: 70%

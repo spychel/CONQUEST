@@ -1,0 +1,70 @@
+.advantages
+    background: #fdfdfb
+    &__bg
+        background-image: linear-gradient(#F7F5EF, #F7F5EF), linear-gradient(#FDFDFB, #FDFDFB)
+        background-size: 35% 100%, 100% 100%
+        background-position: top left, center 0
+        background-repeat: no-repeat
+        position: relative
+        overflow: hidden
+        &::after, &::before
+            content: ''
+            border: 1px solid #D4B098
+            border-radius: 50%
+            position: absolute
+        &::before
+            width: 36.5rem
+            height: 36.5rem
+            top: -13rem
+            right: -14rem
+        &::after
+            width: 74.4rem
+            height: 74.4rem
+            top: 2rem
+            right: -47rem
+    &__wrapper
+        padding: 0 17.7rem
+
+.slider
+    display: grid
+    grid-template-columns: repeat(15, 6.3rem)
+    grid-template-rows: repeat(10, 5.2rem)
+    &__img
+        grid-area: 2 / 1 / 9 / 6
+        row-gap: 2rem
+        height: 41.4rem
+        width: 52.1rem
+    &__offer
+        grid-area: 3 / 11 / 5 / 16
+    &__description
+        grid-area: 5 / 11 / 6 / 16
+        font-size: 1.6rem
+    &__button
+        grid-area: 7 / 11 / 9 / 16
+        align-self: center
+    &__control-panel
+        grid-area: 10 / 6 / 11 / 9
+        align-self: center
+        justify-self: center
+        font-size: 1.2rem
+        font-family: Prata
+        font-weight: 400
+
+.control-panel
+    width: 6.3rem
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    &__left, &__right
+        display: block
+        height: 1rem
+        width: .5rem
+        cursor: pointer
+        transition: .2s all
+        &:hover
+            transform: translateY(-.1rem)
+    &__left
+        background: url("../icons/arrow_left.svg") center / cover no-repeat
+    &__right
+        background: url("../icons/arrow_right.svg") center / cover no-repeat
