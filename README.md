@@ -1,4 +1,6 @@
 # CONQUEST
+This webpage is not adaptive, the minimum allowable width equals 1366px as in the maket
+maket: https://www.figma.com/file/22fczdbtZ13E40gD1BkxNR/%5BPublished%5D%5BRU%5D-%C2%ABConquest%C2%BB?t=FId0Vof5N1XFHkWv-0
 
 How to launch:
   1. clone repo
